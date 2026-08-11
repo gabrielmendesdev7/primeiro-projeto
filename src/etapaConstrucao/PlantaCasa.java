@@ -1,4 +1,6 @@
-public class PlantaCasa {
+package etapaConstrucao;
+
+public class PlantaCasa implements Construcao {
 
     int metragem;
     int numeroQuartos;
@@ -6,11 +8,22 @@ public class PlantaCasa {
     String cor;
     String material;
 
+    @Override
     public void construir() {
         System.out.println("Metragem " + metragem);
         System.out.println("Numero de quartos " + numeroQuartos);
         System.out.println("Numero de banheiros " + numeroBanheiros);
         System.out.println("Material " + material);
+    }
+
+    @Override
+    public void pintar(String cor) {
+        System.out.println("Cor " + cor);
+    }
+
+    @Override
+    public int calcularCustoConstrucao(int custoPortMetro) {
+        return metragem + custoPortMetro;
     }
 
     public void pintar() {
