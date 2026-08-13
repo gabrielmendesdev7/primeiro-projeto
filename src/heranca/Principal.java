@@ -1,4 +1,4 @@
-package herança;
+package heranca;
 
 public class Principal {
 
