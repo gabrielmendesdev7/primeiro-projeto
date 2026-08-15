@@ -1,3 +1,5 @@
+package logicasequencial;
+
 public class ConversaoTIpos {
 
     public static void main(String[] args) {
